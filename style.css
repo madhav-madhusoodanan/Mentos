@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Akronim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    transition: all .5s cubic-bezier(.37,1.14,.26,1.24);
+}
+
+html{
+    font-size: 62.5%;
+}
+
+#logo{
+    position:absolute;
+    top:5px;
+    left:15px;
+}
+
+#logo img{
+    width:50px;
+    height:50px;
+    
+   
+}
+
+#navbar{
+    background-color:rgb(240, 226, 238);
+    height:55px;
+}
+ 
+#navbar ul{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:50px;
+
+}
+
+#navbar ul li{
+    list-style: none;
+    padding: 2.5rem;
+}
+
+#navbar ul li a{
+    font-family:'Baloo Bhai 2', cursive;
+    color:black;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+#navbar ul li a:hover{
+    color:grey;
+}
+
+
+#intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height:60vh;
+    background:url(/Images/background1.1.png)no-repeat center center/cover;
+    font-size: 4rem;
+    font-family: 'Lobster', cursive;
+    box-shadow: 0px 6px 12px rgb(164, 230, 230);
+    transition:3s;
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+}
+#intro .small{
+    font-size: 3rem;
+}
+
+#Services{
+    min-height:35rem;
+ }
+ 
+ .serviceheading{
+     text-align: center;
+     font-size: 4rem;
+     margin:2rem;
+ }
+ 
+ .service{
+     display:flex;
+     align-items: center;
+     justify-content: center;
+     flex-wrap: wrap;
+     width:100%;
+ }
+ 
+ #Services .service #product1{
+     background-image: url(/Images/product1.2.png);
+     position:relative;
+ }
+ #Services .service #product2{
+     background-image: url(/Images/product2.png);
+     position:relative;
+ }
+ #Services .service #product3{
+     background-image: url(/Images/product3.png);
+     position:relative;
+ }
+ .service div{
+     display:flex;
+     flex-direction: column;
+     border:2px solid black;
+     height: 200px;
+     width:350px;
+     align-items: center;
+     justify-content: center;
+     border-radius: 2rem;
+     margin: 2rem 6rem;
+     background-color: rgb(238, 238, 238);
+ }
+ 
+ .service div h2{
+     font-size:3rem;
+     position:absolute;
+     top:10px;
+ }
+ 
+ .service div p{
+     font-size: 1.2rem;
+     position:absolute;
+     top:50px;
+     text-align: center;
+ }
+ 
+.about{
+    background-image:linear-gradient(rgb(224, 249, 255) ,rgb(192, 243, 245))
+}
+
+.about .heading{
+    text-align: center;
+    font-size: 4rem;
+    color:#555;
+    padding:1rem;
+    padding-top: 3rem;
+}
+ .about .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.about .row .video-container{
+    flex:1 1 40rem;
+    padding:2rem;
+}
+
+.about .row  .video-container video{
+    width: 100%;
+}
+
+
+.about .row .content{
+    flex:1 1 40rem;
+    padding:2rem;
+}
+
+.about .row .content h3{
+    font-size: 3rem;
+    color:var(--green);
+}
+
+.about .row .content p{
+    font-size: 1.5rem;
+    color:#666;
+    padding:1rem 0;
+}
+
+footer{
+    background-color: black;
+    min-height: 5rem;
+    color: white;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 15px;
+}
+
+@keyframes animate{
+    0%{        
+        background: url(/Images/background1.1.png) no-repeat center center/cover;
+    }
+    55%{        
+        background: url(/Images/background2.1.jpg) no-repeat center center/cover;
+    }
+    100%{        
+        background: url(/Images/background3.1.jpg) no-repeat center center/cover;
+    }
+   
+    
+}
+
+@media(max-width:780px){
+    html{
+        font-size:50%;
+    }
+}
+@media(max-width:630px){
+    html{
+        font-size:45%;
+    }
+    #logo img{
+        height:40px;
+    }
+}
+

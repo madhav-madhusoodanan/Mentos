@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in page</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body{
+            background: url(/Images/pexels-bill-emrich-230794.jpg)no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .container{
+            position:absolute;
+            top:40%;
+            left:45%;
+            width:350px;
+            
+        }
+        .container h1{
+            color:white;
+            font-size:2rem;
+            border-bottom: 2px solid purple;
+            margin:20px 5px;
+            width:50%;
+        }
+        .container .box{
+            margin:20px 5px;
+            border-bottom:2px solid purple;
+            outline: none;
+        }
+        .container .box input{
+            margin:0px 4px;
+            background:none;
+            outline: none;
+            border:none;
+            padding:5px 15px;
+        }
+
+        .container .btn{
+            font-size:1.5rem;
+        }
+        .container .btn:hover{
+            
+            cursor: pointer;
+            color:purple;
+            border:2px solid purple;
+            border-radius: 5px;
+        }
+    </style>
+
+</head>
+<body>
+<div class="container">
+    <h1>Sign In
+    </h1>
+    <div class="box">
+        <i class="fa fa-envelope"></i>
+        <input type="email" name="email" placeholder="Enter Your Email">
+    </div>
+    <div class="box">
+        <i class="fa fa-key"></i>
+         <input type="password" name="password" placeholder="Enter Your Password">
+    </div>
+    <buttom class="btn">Sign In</buttom>
+</div>
+    	
+
+    
+</body>
+<script src="https://kit.fontawesome.com/13790fcafb.js" crossorigin="anonymous"></script>
+</html>
